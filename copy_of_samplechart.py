@@ -25,7 +25,7 @@ model = pd.DataFrame({'x': x.ravel(),
                      'y': y.ravel(),
                      'z': z.ravel()})
 
-alt.Chart(model).mark_rect().encode(
+Chart = alt.Chart(model).mark_rect().encode(
     x='x:O',
     y='y:O',
     color='z:Q',
