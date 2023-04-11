@@ -10,6 +10,7 @@ Original file is located at
 import numpy as np
 import pandas as pd
 import altair as alt
+import streamlit as st
 
 Low = 100
 
@@ -30,3 +31,5 @@ alt.Chart(model).mark_rect().encode(
     color='z:Q',
     tooltip='z:Q'
 )
+
+st.altair_chart(Chart, use_container_width = True)
